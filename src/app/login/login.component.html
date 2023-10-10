@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="logo">CineCriticHub</div>
+  <img id="logo-image" src="../../assets/logo-image.jpg" alt="logo-picture" />
+  <div class="desc">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quis quam,
+    ut exercitationem excepturi nihil in ipsam optio quia! Reiciendis possimus,
+    repellat est veniam nostrum et? Nobis, eaque ratione. Earum molestiae
+    obcaecati ad ipsum, temporibus vitae atque nostrum dolor tempora delectus
+    sunt veniam omnis corporis sapiente accusantium minima tempore architecto
+    totam numquam. Deleniti quod molestias provident natus eveniet, ut quia
+    dignissimos quaerat exercitationem, sit expedita officiis eligendi quas.
+    Molestiae exercitationem minus sapiente dolor. Velit amet aliquid ducimus
+    quos repellat sequi pariatur asperiores consequatur dolorem itaque alias
+    dignissimos.
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input
+        [(ngModel)]="username"
+        type="text"
+        name="uname"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pswrd">Password</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        name="pswrd"
+        class="form-control"
+      />
+    </div>
+    <div id="error-message" [innerHTML]="htmlString"></div>
+    <div class="btn-container">
+      <button (click)="checkCredentials()" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
